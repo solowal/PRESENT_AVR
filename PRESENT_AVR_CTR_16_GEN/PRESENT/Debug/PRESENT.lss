@@ -1,0 +1,1181 @@
+
+PRESENT.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000110  00800100  0000078e  00000822  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000078e  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          000001f0  00800210  00800210  00000a10  2**8
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000932  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000964  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000060  00000000  00000000  000009a0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a60  00000000  00000000  00000a00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000007ff  00000000  00000000  00001460  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000423  00000000  00000000  00001c5f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000024  00000000  00000000  00002084  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000425  00000000  00000000  000020a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  000024cd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	12 e0       	ldi	r17, 0x02	; 2
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ee e8       	ldi	r30, 0x8E	; 142
+  a0:	f7 e0       	ldi	r31, 0x07	; 7
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 31       	cpi	r26, 0x10	; 16
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	24 e0       	ldi	r18, 0x04	; 4
+  b4:	a0 e1       	ldi	r26, 0x10	; 16
+  b6:	b2 e0       	ldi	r27, 0x02	; 2
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a0 30       	cpi	r26, 0x00	; 0
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	50 d3       	rcall	.+1696   	; 0x764 <main>
+  c4:	62 c3       	rjmp	.+1732   	; 0x78a <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <PRESENT_gen>:
+.endm
+//ADIW R30, 2
+
+
+PRESENT_gen:
+	PUSH_REGS
+  c8:	2f 92       	push	r2
+  ca:	3f 92       	push	r3
+  cc:	4f 92       	push	r4
+  ce:	5f 92       	push	r5
+  d0:	6f 92       	push	r6
+  d2:	7f 92       	push	r7
+  d4:	8f 92       	push	r8
+  d6:	9f 92       	push	r9
+  d8:	af 92       	push	r10
+  da:	bf 92       	push	r11
+  dc:	cf 92       	push	r12
+  de:	df 92       	push	r13
+  e0:	ef 92       	push	r14
+  e2:	ff 92       	push	r15
+  e4:	0f 93       	push	r16
+  e6:	1f 93       	push	r17
+  e8:	cf 93       	push	r28
+  ea:	df 93       	push	r29
+
+	MOVW R28, R24		//PLAIN TEXT
+  ec:	ec 01       	movw	r28, r24
+	
+	
+	LOAD_MM Y
+  ee:	28 80       	ld	r2, Y
+  f0:	39 80       	ldd	r3, Y+1	; 0x01
+  f2:	4a 80       	ldd	r4, Y+2	; 0x02
+  f4:	5b 80       	ldd	r5, Y+3	; 0x03
+  f6:	6c 80       	ldd	r6, Y+4	; 0x04
+  f8:	7d 80       	ldd	r7, Y+5	; 0x05
+  fa:	8e 80       	ldd	r8, Y+6	; 0x06
+  fc:	9f 80       	ldd	r9, Y+7	; 0x07
+
+	MOVW R28, R22		//ROUND KEY
+  fe:	eb 01       	movw	r28, r22
+	MOVW R30, R20		//TABLE
+ 100:	fa 01       	movw	r30, r20
+
+	MOVW C0, P0
+ 102:	c1 01       	movw	r24, r2
+	MOVW C2, P2
+ 104:	d2 01       	movw	r26, r4
+	MOVW C4, P4
+ 106:	a3 01       	movw	r20, r6
+	MOVW C6, P6
+ 108:	b4 01       	movw	r22, r8
+
+	CLR ZERO 
+ 10a:	11 24       	eor	r1, r1
+	LDI T9, 16
+ 10c:	30 e1       	ldi	r19, 0x10	; 16
+	MOV CNT_OUT, T9
+ 10e:	03 2e       	mov	r0, r19
+
+00000110 <LOOP>:
+	//BEGIN ROUND 
+	
+	LOOP:
+	//1
+	ADD_ROUND P0,P1,P2,P3,P4,P5,P6,P7,T0
+ 110:	a8 80       	ld	r10, Y
+ 112:	2a 24       	eor	r2, r10
+ 114:	a9 80       	ldd	r10, Y+1	; 0x01
+ 116:	3a 24       	eor	r3, r10
+ 118:	aa 80       	ldd	r10, Y+2	; 0x02
+ 11a:	4a 24       	eor	r4, r10
+ 11c:	ab 80       	ldd	r10, Y+3	; 0x03
+ 11e:	5a 24       	eor	r5, r10
+ 120:	ac 80       	ldd	r10, Y+4	; 0x04
+ 122:	6a 24       	eor	r6, r10
+ 124:	ad 80       	ldd	r10, Y+5	; 0x05
+ 126:	7a 24       	eor	r7, r10
+ 128:	ae 80       	ldd	r10, Y+6	; 0x06
+ 12a:	8a 24       	eor	r8, r10
+ 12c:	af 80       	ldd	r10, Y+7	; 0x07
+ 12e:	9a 24       	eor	r9, r10
+	
+	P_FUNC_0 P0,P1,P2,P3,P4,P5,P6,P7,T8,T9
+ 130:	93 01       	movw	r18, r6
+ 132:	36 95       	lsr	r19
+ 134:	27 95       	ror	r18
+ 136:	28 25       	eor	r18, r8
+ 138:	39 25       	eor	r19, r9
+ 13a:	25 75       	andi	r18, 0x55	; 85
+ 13c:	35 75       	andi	r19, 0x55	; 85
+ 13e:	82 26       	eor	r8, r18
+ 140:	93 26       	eor	r9, r19
+ 142:	22 0f       	add	r18, r18
+ 144:	33 1f       	adc	r19, r19
+ 146:	62 26       	eor	r6, r18
+ 148:	73 26       	eor	r7, r19
+ 14a:	91 01       	movw	r18, r2
+ 14c:	36 95       	lsr	r19
+ 14e:	27 95       	ror	r18
+ 150:	24 25       	eor	r18, r4
+ 152:	35 25       	eor	r19, r5
+ 154:	25 75       	andi	r18, 0x55	; 85
+ 156:	35 75       	andi	r19, 0x55	; 85
+ 158:	42 26       	eor	r4, r18
+ 15a:	53 26       	eor	r5, r19
+ 15c:	22 0f       	add	r18, r18
+ 15e:	33 1f       	adc	r19, r19
+ 160:	22 26       	eor	r2, r18
+ 162:	33 26       	eor	r3, r19
+ 164:	92 01       	movw	r18, r4
+ 166:	36 95       	lsr	r19
+ 168:	27 95       	ror	r18
+ 16a:	36 95       	lsr	r19
+ 16c:	27 95       	ror	r18
+ 16e:	28 25       	eor	r18, r8
+ 170:	39 25       	eor	r19, r9
+ 172:	23 73       	andi	r18, 0x33	; 51
+ 174:	33 73       	andi	r19, 0x33	; 51
+ 176:	82 26       	eor	r8, r18
+ 178:	93 26       	eor	r9, r19
+ 17a:	22 0f       	add	r18, r18
+ 17c:	33 1f       	adc	r19, r19
+ 17e:	22 0f       	add	r18, r18
+ 180:	33 1f       	adc	r19, r19
+ 182:	42 26       	eor	r4, r18
+ 184:	53 26       	eor	r5, r19
+ 186:	91 01       	movw	r18, r2
+ 188:	36 95       	lsr	r19
+ 18a:	27 95       	ror	r18
+ 18c:	36 95       	lsr	r19
+ 18e:	27 95       	ror	r18
+ 190:	26 25       	eor	r18, r6
+ 192:	37 25       	eor	r19, r7
+ 194:	23 73       	andi	r18, 0x33	; 51
+ 196:	33 73       	andi	r19, 0x33	; 51
+ 198:	62 26       	eor	r6, r18
+ 19a:	73 26       	eor	r7, r19
+ 19c:	22 0f       	add	r18, r18
+ 19e:	33 1f       	adc	r19, r19
+ 1a0:	22 0f       	add	r18, r18
+ 1a2:	33 1f       	adc	r19, r19
+ 1a4:	22 26       	eor	r2, r18
+ 1a6:	33 26       	eor	r3, r19
+	S_BOX P0,P1,P2,P3,P4,P5,P6,P7,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9
+ 1a8:	52 01       	movw	r10, r4
+ 1aa:	a6 24       	eor	r10, r6
+ 1ac:	b7 24       	eor	r11, r7
+ 1ae:	63 01       	movw	r12, r6
+ 1b0:	ca 20       	and	r12, r10
+ 1b2:	db 20       	and	r13, r11
+ 1b4:	74 01       	movw	r14, r8
+ 1b6:	ec 24       	eor	r14, r12
+ 1b8:	fd 24       	eor	r15, r13
+ 1ba:	91 01       	movw	r18, r2
+ 1bc:	2e 25       	eor	r18, r14
+ 1be:	3f 25       	eor	r19, r15
+ 1c0:	65 01       	movw	r12, r10
+ 1c2:	ce 20       	and	r12, r14
+ 1c4:	df 20       	and	r13, r15
+ 1c6:	a2 26       	eor	r10, r18
+ 1c8:	b3 26       	eor	r11, r19
+ 1ca:	c6 24       	eor	r12, r6
+ 1cc:	d7 24       	eor	r13, r7
+ 1ce:	81 01       	movw	r16, r2
+ 1d0:	0c 29       	or	r16, r12
+ 1d2:	1d 29       	or	r17, r13
+ 1d4:	25 01       	movw	r4, r10
+ 1d6:	40 26       	eor	r4, r16
+ 1d8:	51 26       	eor	r5, r17
+ 1da:	20 94       	com	r2
+ 1dc:	30 94       	com	r3
+ 1de:	c2 24       	eor	r12, r2
+ 1e0:	d3 24       	eor	r13, r3
+ 1e2:	42 01       	movw	r8, r4
+ 1e4:	8c 24       	eor	r8, r12
+ 1e6:	9d 24       	eor	r9, r13
+ 1e8:	ca 28       	or	r12, r10
+ 1ea:	db 28       	or	r13, r11
+ 1ec:	37 01       	movw	r6, r14
+ 1ee:	6c 24       	eor	r6, r12
+ 1f0:	7d 24       	eor	r7, r13
+ 1f2:	19 01       	movw	r2, r18
+	P_FUNC_1 P0,P1,P2,P3,P4,P5,P6,P7,T8,T9
+ 1f4:	93 01       	movw	r18, r6
+ 1f6:	36 95       	lsr	r19
+ 1f8:	27 95       	ror	r18
+ 1fa:	36 95       	lsr	r19
+ 1fc:	27 95       	ror	r18
+ 1fe:	36 95       	lsr	r19
+ 200:	27 95       	ror	r18
+ 202:	36 95       	lsr	r19
+ 204:	27 95       	ror	r18
+ 206:	28 25       	eor	r18, r8
+ 208:	39 25       	eor	r19, r9
+ 20a:	2f 70       	andi	r18, 0x0F	; 15
+ 20c:	3f 70       	andi	r19, 0x0F	; 15
+ 20e:	82 26       	eor	r8, r18
+ 210:	93 26       	eor	r9, r19
+ 212:	22 0f       	add	r18, r18
+ 214:	33 1f       	adc	r19, r19
+ 216:	22 0f       	add	r18, r18
+ 218:	33 1f       	adc	r19, r19
+ 21a:	22 0f       	add	r18, r18
+ 21c:	33 1f       	adc	r19, r19
+ 21e:	22 0f       	add	r18, r18
+ 220:	33 1f       	adc	r19, r19
+ 222:	62 26       	eor	r6, r18
+ 224:	73 26       	eor	r7, r19
+ 226:	91 01       	movw	r18, r2
+ 228:	36 95       	lsr	r19
+ 22a:	27 95       	ror	r18
+ 22c:	36 95       	lsr	r19
+ 22e:	27 95       	ror	r18
+ 230:	36 95       	lsr	r19
+ 232:	27 95       	ror	r18
+ 234:	36 95       	lsr	r19
+ 236:	27 95       	ror	r18
+ 238:	24 25       	eor	r18, r4
+ 23a:	35 25       	eor	r19, r5
+ 23c:	2f 70       	andi	r18, 0x0F	; 15
+ 23e:	3f 70       	andi	r19, 0x0F	; 15
+ 240:	42 26       	eor	r4, r18
+ 242:	53 26       	eor	r5, r19
+ 244:	22 0f       	add	r18, r18
+ 246:	33 1f       	adc	r19, r19
+ 248:	22 0f       	add	r18, r18
+ 24a:	33 1f       	adc	r19, r19
+ 24c:	22 0f       	add	r18, r18
+ 24e:	33 1f       	adc	r19, r19
+ 250:	22 0f       	add	r18, r18
+ 252:	33 1f       	adc	r19, r19
+ 254:	22 26       	eor	r2, r18
+ 256:	33 26       	eor	r3, r19
+ 258:	25 2d       	mov	r18, r5
+ 25a:	34 2d       	mov	r19, r4
+ 25c:	28 25       	eor	r18, r8
+ 25e:	82 26       	eor	r8, r18
+ 260:	52 26       	eor	r5, r18
+ 262:	23 2d       	mov	r18, r3
+ 264:	32 2d       	mov	r19, r2
+ 266:	26 25       	eor	r18, r6
+ 268:	62 26       	eor	r6, r18
+ 26a:	32 26       	eor	r3, r18
+
+	ADD_ROUND2 P0,P1,P2,P3,P4,P5,P6,P7,T0
+ 26c:	a8 84       	ldd	r10, Y+8	; 0x08
+ 26e:	2a 24       	eor	r2, r10
+ 270:	a9 84       	ldd	r10, Y+9	; 0x09
+ 272:	3a 24       	eor	r3, r10
+ 274:	aa 84       	ldd	r10, Y+10	; 0x0a
+ 276:	4a 24       	eor	r4, r10
+ 278:	ab 84       	ldd	r10, Y+11	; 0x0b
+ 27a:	5a 24       	eor	r5, r10
+ 27c:	ac 84       	ldd	r10, Y+12	; 0x0c
+ 27e:	6a 24       	eor	r6, r10
+ 280:	ad 84       	ldd	r10, Y+13	; 0x0d
+ 282:	7a 24       	eor	r7, r10
+ 284:	ae 84       	ldd	r10, Y+14	; 0x0e
+ 286:	8a 24       	eor	r8, r10
+ 288:	af 84       	ldd	r10, Y+15	; 0x0f
+ 28a:	9a 24       	eor	r9, r10
+
+	///STORE
+	STORE_MM_4 Z
+ 28c:	20 82       	st	Z, r2
+ 28e:	31 82       	std	Z+1, r3	; 0x01
+ 290:	40 a2       	std	Z+32, r4	; 0x20
+ 292:	51 a2       	std	Z+33, r5	; 0x21
+ 294:	b0 96       	adiw	r30, 0x20	; 32
+ 296:	60 a2       	std	Z+32, r6	; 0x20
+ 298:	71 a2       	std	Z+33, r7	; 0x21
+ 29a:	b0 96       	adiw	r30, 0x20	; 32
+ 29c:	80 a2       	std	Z+32, r8	; 0x20
+ 29e:	91 a2       	std	Z+33, r9	; 0x21
+ 2a0:	b0 97       	sbiw	r30, 0x20	; 32
+ 2a2:	7e 97       	sbiw	r30, 0x1e	; 30
+
+	ADIW C0, 1
+ 2a4:	01 96       	adiw	r24, 0x01	; 1
+	ADIW C0, 16
+ 2a6:	40 96       	adiw	r24, 0x10	; 16
+	INC C1
+ 2a8:	93 95       	inc	r25
+	LDI T9, 16
+ 2aa:	30 e1       	ldi	r19, 0x10	; 16
+	ADD C1, T9
+ 2ac:	93 0f       	add	r25, r19
+
+	MOVW P0, C0
+ 2ae:	1c 01       	movw	r2, r24
+	MOVW P2, C2
+ 2b0:	2d 01       	movw	r4, r26
+	MOVW P4, C4
+ 2b2:	3a 01       	movw	r6, r20
+	MOVW P6, C6
+ 2b4:	4b 01       	movw	r8, r22
+
+	DEC CNT_OUT
+ 2b6:	0a 94       	dec	r0
+	CPSE CNT_OUT, ZERO
+ 2b8:	01 10       	cpse	r0, r1
+	RJMP LOOP
+ 2ba:	2a cf       	rjmp	.-428    	; 0x110 <LOOP>
+
+	POP_REGS
+ 2bc:	df 91       	pop	r29
+ 2be:	cf 91       	pop	r28
+ 2c0:	1f 91       	pop	r17
+ 2c2:	0f 91       	pop	r16
+ 2c4:	ff 90       	pop	r15
+ 2c6:	ef 90       	pop	r14
+ 2c8:	df 90       	pop	r13
+ 2ca:	cf 90       	pop	r12
+ 2cc:	bf 90       	pop	r11
+ 2ce:	af 90       	pop	r10
+ 2d0:	9f 90       	pop	r9
+ 2d2:	8f 90       	pop	r8
+ 2d4:	7f 90       	pop	r7
+ 2d6:	6f 90       	pop	r6
+ 2d8:	5f 90       	pop	r5
+ 2da:	4f 90       	pop	r4
+ 2dc:	3f 90       	pop	r3
+ 2de:	2f 90       	pop	r2
+ 2e0:	11 24       	eor	r1, r1
+ 2e2:	08 95       	ret
+
+000002e4 <PRESENT_enc_ctr>:
+	ADD R30, \CTR0
+	LDD \T0, Z+0
+	LDD \T1, Z+1
+.endm
+PRESENT_enc_ctr:
+	PUSH_REGS
+ 2e4:	2f 92       	push	r2
+ 2e6:	3f 92       	push	r3
+ 2e8:	4f 92       	push	r4
+ 2ea:	5f 92       	push	r5
+ 2ec:	6f 92       	push	r6
+ 2ee:	7f 92       	push	r7
+ 2f0:	8f 92       	push	r8
+ 2f2:	9f 92       	push	r9
+ 2f4:	af 92       	push	r10
+ 2f6:	bf 92       	push	r11
+ 2f8:	cf 92       	push	r12
+ 2fa:	df 92       	push	r13
+ 2fc:	ef 92       	push	r14
+ 2fe:	ff 92       	push	r15
+ 300:	0f 93       	push	r16
+ 302:	1f 93       	push	r17
+ 304:	cf 93       	push	r28
+ 306:	df 93       	push	r29
+
+	MOVW R28, R24		//NONCE
+ 308:	ec 01       	movw	r28, r24
+	MOVW R26, R22		//ROUND KEY
+ 30a:	db 01       	movw	r26, r22
+
+	PUSH R20			//PLAINTEXT
+ 30c:	4f 93       	push	r20
+	PUSH R21
+ 30e:	5f 93       	push	r21
+
+	MOVW R30, R18		
+ 310:	f9 01       	movw	r30, r18
+	//PUSH R18			//LUT
+	//PUSH R19			
+	
+	
+	LOAD_MM Y
+ 312:	28 80       	ld	r2, Y
+ 314:	39 80       	ldd	r3, Y+1	; 0x01
+ 316:	4a 80       	ldd	r4, Y+2	; 0x02
+ 318:	5b 80       	ldd	r5, Y+3	; 0x03
+ 31a:	6c 80       	ldd	r6, Y+4	; 0x04
+ 31c:	7d 80       	ldd	r7, Y+5	; 0x05
+ 31e:	8e 80       	ldd	r8, Y+6	; 0x06
+ 320:	9f 80       	ldd	r9, Y+7	; 0x07
+	LDI R20, 1
+ 322:	41 e0       	ldi	r20, 0x01	; 1
+	MOVW T0, P0
+ 324:	51 01       	movw	r10, r2
+	MOVW T2, P2
+ 326:	62 01       	movw	r12, r4
+
+	ADD T0, R20
+ 328:	a4 0e       	add	r10, r20
+	ADC T1, R1
+ 32a:	b1 1c       	adc	r11, r1
+
+	STD Y+0, T0
+ 32c:	a8 82       	st	Y, r10
+	STD Y+1, T1
+ 32e:	b9 82       	std	Y+1, r11	; 0x01
+
+	//ADIW R30,32
+	//BEGIN ROUND 
+	//POP R31
+	//POP R30
+	LUT_TOP_RAM P0,P1,P2,P3,P4,P5,P6,P7,T7,T8,T9
+ 330:	10 e2       	ldi	r17, 0x20	; 32
+ 332:	91 01       	movw	r18, r2
+ 334:	e2 2f       	mov	r30, r18
+ 336:	ef 70       	andi	r30, 0x0F	; 15
+ 338:	ee 0f       	add	r30, r30
+ 33a:	20 80       	ld	r2, Z
+ 33c:	31 80       	ldd	r3, Z+1	; 0x01
+ 33e:	22 95       	swap	r18
+ 340:	e2 2f       	mov	r30, r18
+ 342:	ef 70       	andi	r30, 0x0F	; 15
+ 344:	ee 0f       	add	r30, r30
+ 346:	e1 0f       	add	r30, r17
+ 348:	40 80       	ld	r4, Z
+ 34a:	51 80       	ldd	r5, Z+1	; 0x01
+ 34c:	e3 2f       	mov	r30, r19
+ 34e:	ef 70       	andi	r30, 0x0F	; 15
+ 350:	ee 0f       	add	r30, r30
+ 352:	e1 0f       	add	r30, r17
+ 354:	e1 0f       	add	r30, r17
+ 356:	60 80       	ld	r6, Z
+ 358:	71 80       	ldd	r7, Z+1	; 0x01
+ 35a:	32 95       	swap	r19
+ 35c:	e3 2f       	mov	r30, r19
+ 35e:	ef 70       	andi	r30, 0x0F	; 15
+ 360:	ee 0f       	add	r30, r30
+ 362:	e1 0f       	add	r30, r17
+ 364:	e1 0f       	add	r30, r17
+ 366:	e1 0f       	add	r30, r17
+ 368:	80 80       	ld	r8, Z
+ 36a:	91 80       	ldd	r9, Z+1	; 0x01
+
+	S_BOX P0,P1,P2,P3,P4,P5,P6,P7,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9
+ 36c:	52 01       	movw	r10, r4
+ 36e:	a6 24       	eor	r10, r6
+ 370:	b7 24       	eor	r11, r7
+ 372:	63 01       	movw	r12, r6
+ 374:	ca 20       	and	r12, r10
+ 376:	db 20       	and	r13, r11
+ 378:	74 01       	movw	r14, r8
+ 37a:	ec 24       	eor	r14, r12
+ 37c:	fd 24       	eor	r15, r13
+ 37e:	91 01       	movw	r18, r2
+ 380:	2e 25       	eor	r18, r14
+ 382:	3f 25       	eor	r19, r15
+ 384:	65 01       	movw	r12, r10
+ 386:	ce 20       	and	r12, r14
+ 388:	df 20       	and	r13, r15
+ 38a:	a2 26       	eor	r10, r18
+ 38c:	b3 26       	eor	r11, r19
+ 38e:	c6 24       	eor	r12, r6
+ 390:	d7 24       	eor	r13, r7
+ 392:	81 01       	movw	r16, r2
+ 394:	0c 29       	or	r16, r12
+ 396:	1d 29       	or	r17, r13
+ 398:	25 01       	movw	r4, r10
+ 39a:	40 26       	eor	r4, r16
+ 39c:	51 26       	eor	r5, r17
+ 39e:	20 94       	com	r2
+ 3a0:	30 94       	com	r3
+ 3a2:	c2 24       	eor	r12, r2
+ 3a4:	d3 24       	eor	r13, r3
+ 3a6:	42 01       	movw	r8, r4
+ 3a8:	8c 24       	eor	r8, r12
+ 3aa:	9d 24       	eor	r9, r13
+ 3ac:	ca 28       	or	r12, r10
+ 3ae:	db 28       	or	r13, r11
+ 3b0:	37 01       	movw	r6, r14
+ 3b2:	6c 24       	eor	r6, r12
+ 3b4:	7d 24       	eor	r7, r13
+ 3b6:	19 01       	movw	r2, r18
+	ADIW R26, 16
+ 3b8:	50 96       	adiw	r26, 0x10	; 16
+
+	CLR ZERO //R30
+ 3ba:	11 24       	eor	r1, r1
+	LDI CNT_OUT, 14
+ 3bc:	4e e0       	ldi	r20, 0x0E	; 14
+
+000003be <LOOP>:
+
+	LOOP:
+	//1
+	ADD_ROUND P0,P1,P2,P3,P4,P5,P6,P7,T0
+ 3be:	ad 90       	ld	r10, X+
+ 3c0:	2a 24       	eor	r2, r10
+ 3c2:	ad 90       	ld	r10, X+
+ 3c4:	3a 24       	eor	r3, r10
+ 3c6:	ad 90       	ld	r10, X+
+ 3c8:	4a 24       	eor	r4, r10
+ 3ca:	ad 90       	ld	r10, X+
+ 3cc:	5a 24       	eor	r5, r10
+ 3ce:	ad 90       	ld	r10, X+
+ 3d0:	6a 24       	eor	r6, r10
+ 3d2:	ad 90       	ld	r10, X+
+ 3d4:	7a 24       	eor	r7, r10
+ 3d6:	ad 90       	ld	r10, X+
+ 3d8:	8a 24       	eor	r8, r10
+ 3da:	ad 90       	ld	r10, X+
+ 3dc:	9a 24       	eor	r9, r10
+	
+	P_FUNC_0 P0,P1,P2,P3,P4,P5,P6,P7,T8,T9
+ 3de:	93 01       	movw	r18, r6
+ 3e0:	36 95       	lsr	r19
+ 3e2:	27 95       	ror	r18
+ 3e4:	28 25       	eor	r18, r8
+ 3e6:	39 25       	eor	r19, r9
+ 3e8:	25 75       	andi	r18, 0x55	; 85
+ 3ea:	35 75       	andi	r19, 0x55	; 85
+ 3ec:	82 26       	eor	r8, r18
+ 3ee:	93 26       	eor	r9, r19
+ 3f0:	22 0f       	add	r18, r18
+ 3f2:	33 1f       	adc	r19, r19
+ 3f4:	62 26       	eor	r6, r18
+ 3f6:	73 26       	eor	r7, r19
+ 3f8:	91 01       	movw	r18, r2
+ 3fa:	36 95       	lsr	r19
+ 3fc:	27 95       	ror	r18
+ 3fe:	24 25       	eor	r18, r4
+ 400:	35 25       	eor	r19, r5
+ 402:	25 75       	andi	r18, 0x55	; 85
+ 404:	35 75       	andi	r19, 0x55	; 85
+ 406:	42 26       	eor	r4, r18
+ 408:	53 26       	eor	r5, r19
+ 40a:	22 0f       	add	r18, r18
+ 40c:	33 1f       	adc	r19, r19
+ 40e:	22 26       	eor	r2, r18
+ 410:	33 26       	eor	r3, r19
+ 412:	92 01       	movw	r18, r4
+ 414:	36 95       	lsr	r19
+ 416:	27 95       	ror	r18
+ 418:	36 95       	lsr	r19
+ 41a:	27 95       	ror	r18
+ 41c:	28 25       	eor	r18, r8
+ 41e:	39 25       	eor	r19, r9
+ 420:	23 73       	andi	r18, 0x33	; 51
+ 422:	33 73       	andi	r19, 0x33	; 51
+ 424:	82 26       	eor	r8, r18
+ 426:	93 26       	eor	r9, r19
+ 428:	22 0f       	add	r18, r18
+ 42a:	33 1f       	adc	r19, r19
+ 42c:	22 0f       	add	r18, r18
+ 42e:	33 1f       	adc	r19, r19
+ 430:	42 26       	eor	r4, r18
+ 432:	53 26       	eor	r5, r19
+ 434:	91 01       	movw	r18, r2
+ 436:	36 95       	lsr	r19
+ 438:	27 95       	ror	r18
+ 43a:	36 95       	lsr	r19
+ 43c:	27 95       	ror	r18
+ 43e:	26 25       	eor	r18, r6
+ 440:	37 25       	eor	r19, r7
+ 442:	23 73       	andi	r18, 0x33	; 51
+ 444:	33 73       	andi	r19, 0x33	; 51
+ 446:	62 26       	eor	r6, r18
+ 448:	73 26       	eor	r7, r19
+ 44a:	22 0f       	add	r18, r18
+ 44c:	33 1f       	adc	r19, r19
+ 44e:	22 0f       	add	r18, r18
+ 450:	33 1f       	adc	r19, r19
+ 452:	22 26       	eor	r2, r18
+ 454:	33 26       	eor	r3, r19
+	S_BOX P0,P1,P2,P3,P4,P5,P6,P7,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9
+ 456:	52 01       	movw	r10, r4
+ 458:	a6 24       	eor	r10, r6
+ 45a:	b7 24       	eor	r11, r7
+ 45c:	63 01       	movw	r12, r6
+ 45e:	ca 20       	and	r12, r10
+ 460:	db 20       	and	r13, r11
+ 462:	74 01       	movw	r14, r8
+ 464:	ec 24       	eor	r14, r12
+ 466:	fd 24       	eor	r15, r13
+ 468:	91 01       	movw	r18, r2
+ 46a:	2e 25       	eor	r18, r14
+ 46c:	3f 25       	eor	r19, r15
+ 46e:	65 01       	movw	r12, r10
+ 470:	ce 20       	and	r12, r14
+ 472:	df 20       	and	r13, r15
+ 474:	a2 26       	eor	r10, r18
+ 476:	b3 26       	eor	r11, r19
+ 478:	c6 24       	eor	r12, r6
+ 47a:	d7 24       	eor	r13, r7
+ 47c:	81 01       	movw	r16, r2
+ 47e:	0c 29       	or	r16, r12
+ 480:	1d 29       	or	r17, r13
+ 482:	25 01       	movw	r4, r10
+ 484:	40 26       	eor	r4, r16
+ 486:	51 26       	eor	r5, r17
+ 488:	20 94       	com	r2
+ 48a:	30 94       	com	r3
+ 48c:	c2 24       	eor	r12, r2
+ 48e:	d3 24       	eor	r13, r3
+ 490:	42 01       	movw	r8, r4
+ 492:	8c 24       	eor	r8, r12
+ 494:	9d 24       	eor	r9, r13
+ 496:	ca 28       	or	r12, r10
+ 498:	db 28       	or	r13, r11
+ 49a:	37 01       	movw	r6, r14
+ 49c:	6c 24       	eor	r6, r12
+ 49e:	7d 24       	eor	r7, r13
+ 4a0:	19 01       	movw	r2, r18
+	P_FUNC_1 P0,P1,P2,P3,P4,P5,P6,P7,T8,T9
+ 4a2:	93 01       	movw	r18, r6
+ 4a4:	36 95       	lsr	r19
+ 4a6:	27 95       	ror	r18
+ 4a8:	36 95       	lsr	r19
+ 4aa:	27 95       	ror	r18
+ 4ac:	36 95       	lsr	r19
+ 4ae:	27 95       	ror	r18
+ 4b0:	36 95       	lsr	r19
+ 4b2:	27 95       	ror	r18
+ 4b4:	28 25       	eor	r18, r8
+ 4b6:	39 25       	eor	r19, r9
+ 4b8:	2f 70       	andi	r18, 0x0F	; 15
+ 4ba:	3f 70       	andi	r19, 0x0F	; 15
+ 4bc:	82 26       	eor	r8, r18
+ 4be:	93 26       	eor	r9, r19
+ 4c0:	22 0f       	add	r18, r18
+ 4c2:	33 1f       	adc	r19, r19
+ 4c4:	22 0f       	add	r18, r18
+ 4c6:	33 1f       	adc	r19, r19
+ 4c8:	22 0f       	add	r18, r18
+ 4ca:	33 1f       	adc	r19, r19
+ 4cc:	22 0f       	add	r18, r18
+ 4ce:	33 1f       	adc	r19, r19
+ 4d0:	62 26       	eor	r6, r18
+ 4d2:	73 26       	eor	r7, r19
+ 4d4:	91 01       	movw	r18, r2
+ 4d6:	36 95       	lsr	r19
+ 4d8:	27 95       	ror	r18
+ 4da:	36 95       	lsr	r19
+ 4dc:	27 95       	ror	r18
+ 4de:	36 95       	lsr	r19
+ 4e0:	27 95       	ror	r18
+ 4e2:	36 95       	lsr	r19
+ 4e4:	27 95       	ror	r18
+ 4e6:	24 25       	eor	r18, r4
+ 4e8:	35 25       	eor	r19, r5
+ 4ea:	2f 70       	andi	r18, 0x0F	; 15
+ 4ec:	3f 70       	andi	r19, 0x0F	; 15
+ 4ee:	42 26       	eor	r4, r18
+ 4f0:	53 26       	eor	r5, r19
+ 4f2:	22 0f       	add	r18, r18
+ 4f4:	33 1f       	adc	r19, r19
+ 4f6:	22 0f       	add	r18, r18
+ 4f8:	33 1f       	adc	r19, r19
+ 4fa:	22 0f       	add	r18, r18
+ 4fc:	33 1f       	adc	r19, r19
+ 4fe:	22 0f       	add	r18, r18
+ 500:	33 1f       	adc	r19, r19
+ 502:	22 26       	eor	r2, r18
+ 504:	33 26       	eor	r3, r19
+ 506:	25 2d       	mov	r18, r5
+ 508:	34 2d       	mov	r19, r4
+ 50a:	28 25       	eor	r18, r8
+ 50c:	82 26       	eor	r8, r18
+ 50e:	52 26       	eor	r5, r18
+ 510:	23 2d       	mov	r18, r3
+ 512:	32 2d       	mov	r19, r2
+ 514:	26 25       	eor	r18, r6
+ 516:	62 26       	eor	r6, r18
+ 518:	32 26       	eor	r3, r18
+
+	//2
+	ADD_ROUND P0,P1,P2,P3,P4,P5,P6,P7,T0
+ 51a:	ad 90       	ld	r10, X+
+ 51c:	2a 24       	eor	r2, r10
+ 51e:	ad 90       	ld	r10, X+
+ 520:	3a 24       	eor	r3, r10
+ 522:	ad 90       	ld	r10, X+
+ 524:	4a 24       	eor	r4, r10
+ 526:	ad 90       	ld	r10, X+
+ 528:	5a 24       	eor	r5, r10
+ 52a:	ad 90       	ld	r10, X+
+ 52c:	6a 24       	eor	r6, r10
+ 52e:	ad 90       	ld	r10, X+
+ 530:	7a 24       	eor	r7, r10
+ 532:	ad 90       	ld	r10, X+
+ 534:	8a 24       	eor	r8, r10
+ 536:	ad 90       	ld	r10, X+
+ 538:	9a 24       	eor	r9, r10
+	S_BOX P0,P1,P2,P3,P4,P5,P6,P7,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9
+ 53a:	52 01       	movw	r10, r4
+ 53c:	a6 24       	eor	r10, r6
+ 53e:	b7 24       	eor	r11, r7
+ 540:	63 01       	movw	r12, r6
+ 542:	ca 20       	and	r12, r10
+ 544:	db 20       	and	r13, r11
+ 546:	74 01       	movw	r14, r8
+ 548:	ec 24       	eor	r14, r12
+ 54a:	fd 24       	eor	r15, r13
+ 54c:	91 01       	movw	r18, r2
+ 54e:	2e 25       	eor	r18, r14
+ 550:	3f 25       	eor	r19, r15
+ 552:	65 01       	movw	r12, r10
+ 554:	ce 20       	and	r12, r14
+ 556:	df 20       	and	r13, r15
+ 558:	a2 26       	eor	r10, r18
+ 55a:	b3 26       	eor	r11, r19
+ 55c:	c6 24       	eor	r12, r6
+ 55e:	d7 24       	eor	r13, r7
+ 560:	81 01       	movw	r16, r2
+ 562:	0c 29       	or	r16, r12
+ 564:	1d 29       	or	r17, r13
+ 566:	25 01       	movw	r4, r10
+ 568:	40 26       	eor	r4, r16
+ 56a:	51 26       	eor	r5, r17
+ 56c:	20 94       	com	r2
+ 56e:	30 94       	com	r3
+ 570:	c2 24       	eor	r12, r2
+ 572:	d3 24       	eor	r13, r3
+ 574:	42 01       	movw	r8, r4
+ 576:	8c 24       	eor	r8, r12
+ 578:	9d 24       	eor	r9, r13
+ 57a:	ca 28       	or	r12, r10
+ 57c:	db 28       	or	r13, r11
+ 57e:	37 01       	movw	r6, r14
+ 580:	6c 24       	eor	r6, r12
+ 582:	7d 24       	eor	r7, r13
+ 584:	19 01       	movw	r2, r18
+
+	DEC CNT_OUT
+ 586:	4a 95       	dec	r20
+	CPSE CNT_OUT, ZERO
+ 588:	41 11       	cpse	r20, r1
+	RJMP LOOP
+ 58a:	19 cf       	rjmp	.-462    	; 0x3be <LOOP>
+
+	ADD_ROUND P0,P1,P2,P3,P4,P5,P6,P7,T0
+ 58c:	ad 90       	ld	r10, X+
+ 58e:	2a 24       	eor	r2, r10
+ 590:	ad 90       	ld	r10, X+
+ 592:	3a 24       	eor	r3, r10
+ 594:	ad 90       	ld	r10, X+
+ 596:	4a 24       	eor	r4, r10
+ 598:	ad 90       	ld	r10, X+
+ 59a:	5a 24       	eor	r5, r10
+ 59c:	ad 90       	ld	r10, X+
+ 59e:	6a 24       	eor	r6, r10
+ 5a0:	ad 90       	ld	r10, X+
+ 5a2:	7a 24       	eor	r7, r10
+ 5a4:	ad 90       	ld	r10, X+
+ 5a6:	8a 24       	eor	r8, r10
+ 5a8:	ad 90       	ld	r10, X+
+ 5aa:	9a 24       	eor	r9, r10
+	
+	P_FUNC_1 P0,P1,P2,P3,P4,P5,P6,P7,T8,T9
+ 5ac:	93 01       	movw	r18, r6
+ 5ae:	36 95       	lsr	r19
+ 5b0:	27 95       	ror	r18
+ 5b2:	36 95       	lsr	r19
+ 5b4:	27 95       	ror	r18
+ 5b6:	36 95       	lsr	r19
+ 5b8:	27 95       	ror	r18
+ 5ba:	36 95       	lsr	r19
+ 5bc:	27 95       	ror	r18
+ 5be:	28 25       	eor	r18, r8
+ 5c0:	39 25       	eor	r19, r9
+ 5c2:	2f 70       	andi	r18, 0x0F	; 15
+ 5c4:	3f 70       	andi	r19, 0x0F	; 15
+ 5c6:	82 26       	eor	r8, r18
+ 5c8:	93 26       	eor	r9, r19
+ 5ca:	22 0f       	add	r18, r18
+ 5cc:	33 1f       	adc	r19, r19
+ 5ce:	22 0f       	add	r18, r18
+ 5d0:	33 1f       	adc	r19, r19
+ 5d2:	22 0f       	add	r18, r18
+ 5d4:	33 1f       	adc	r19, r19
+ 5d6:	22 0f       	add	r18, r18
+ 5d8:	33 1f       	adc	r19, r19
+ 5da:	62 26       	eor	r6, r18
+ 5dc:	73 26       	eor	r7, r19
+ 5de:	91 01       	movw	r18, r2
+ 5e0:	36 95       	lsr	r19
+ 5e2:	27 95       	ror	r18
+ 5e4:	36 95       	lsr	r19
+ 5e6:	27 95       	ror	r18
+ 5e8:	36 95       	lsr	r19
+ 5ea:	27 95       	ror	r18
+ 5ec:	36 95       	lsr	r19
+ 5ee:	27 95       	ror	r18
+ 5f0:	24 25       	eor	r18, r4
+ 5f2:	35 25       	eor	r19, r5
+ 5f4:	2f 70       	andi	r18, 0x0F	; 15
+ 5f6:	3f 70       	andi	r19, 0x0F	; 15
+ 5f8:	42 26       	eor	r4, r18
+ 5fa:	53 26       	eor	r5, r19
+ 5fc:	22 0f       	add	r18, r18
+ 5fe:	33 1f       	adc	r19, r19
+ 600:	22 0f       	add	r18, r18
+ 602:	33 1f       	adc	r19, r19
+ 604:	22 0f       	add	r18, r18
+ 606:	33 1f       	adc	r19, r19
+ 608:	22 0f       	add	r18, r18
+ 60a:	33 1f       	adc	r19, r19
+ 60c:	22 26       	eor	r2, r18
+ 60e:	33 26       	eor	r3, r19
+ 610:	25 2d       	mov	r18, r5
+ 612:	34 2d       	mov	r19, r4
+ 614:	28 25       	eor	r18, r8
+ 616:	82 26       	eor	r8, r18
+ 618:	52 26       	eor	r5, r18
+ 61a:	23 2d       	mov	r18, r3
+ 61c:	32 2d       	mov	r19, r2
+ 61e:	26 25       	eor	r18, r6
+ 620:	62 26       	eor	r6, r18
+ 622:	32 26       	eor	r3, r18
+	P_FUNC_0 P0,P1,P2,P3,P4,P5,P6,P7,T8,T9
+ 624:	93 01       	movw	r18, r6
+ 626:	36 95       	lsr	r19
+ 628:	27 95       	ror	r18
+ 62a:	28 25       	eor	r18, r8
+ 62c:	39 25       	eor	r19, r9
+ 62e:	25 75       	andi	r18, 0x55	; 85
+ 630:	35 75       	andi	r19, 0x55	; 85
+ 632:	82 26       	eor	r8, r18
+ 634:	93 26       	eor	r9, r19
+ 636:	22 0f       	add	r18, r18
+ 638:	33 1f       	adc	r19, r19
+ 63a:	62 26       	eor	r6, r18
+ 63c:	73 26       	eor	r7, r19
+ 63e:	91 01       	movw	r18, r2
+ 640:	36 95       	lsr	r19
+ 642:	27 95       	ror	r18
+ 644:	24 25       	eor	r18, r4
+ 646:	35 25       	eor	r19, r5
+ 648:	25 75       	andi	r18, 0x55	; 85
+ 64a:	35 75       	andi	r19, 0x55	; 85
+ 64c:	42 26       	eor	r4, r18
+ 64e:	53 26       	eor	r5, r19
+ 650:	22 0f       	add	r18, r18
+ 652:	33 1f       	adc	r19, r19
+ 654:	22 26       	eor	r2, r18
+ 656:	33 26       	eor	r3, r19
+ 658:	92 01       	movw	r18, r4
+ 65a:	36 95       	lsr	r19
+ 65c:	27 95       	ror	r18
+ 65e:	36 95       	lsr	r19
+ 660:	27 95       	ror	r18
+ 662:	28 25       	eor	r18, r8
+ 664:	39 25       	eor	r19, r9
+ 666:	23 73       	andi	r18, 0x33	; 51
+ 668:	33 73       	andi	r19, 0x33	; 51
+ 66a:	82 26       	eor	r8, r18
+ 66c:	93 26       	eor	r9, r19
+ 66e:	22 0f       	add	r18, r18
+ 670:	33 1f       	adc	r19, r19
+ 672:	22 0f       	add	r18, r18
+ 674:	33 1f       	adc	r19, r19
+ 676:	42 26       	eor	r4, r18
+ 678:	53 26       	eor	r5, r19
+ 67a:	91 01       	movw	r18, r2
+ 67c:	36 95       	lsr	r19
+ 67e:	27 95       	ror	r18
+ 680:	36 95       	lsr	r19
+ 682:	27 95       	ror	r18
+ 684:	26 25       	eor	r18, r6
+ 686:	37 25       	eor	r19, r7
+ 688:	23 73       	andi	r18, 0x33	; 51
+ 68a:	33 73       	andi	r19, 0x33	; 51
+ 68c:	62 26       	eor	r6, r18
+ 68e:	73 26       	eor	r7, r19
+ 690:	22 0f       	add	r18, r18
+ 692:	33 1f       	adc	r19, r19
+ 694:	22 0f       	add	r18, r18
+ 696:	33 1f       	adc	r19, r19
+ 698:	22 26       	eor	r2, r18
+ 69a:	33 26       	eor	r3, r19
+
+	S_BOX P0,P1,P2,P3,P4,P5,P6,P7,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9
+ 69c:	52 01       	movw	r10, r4
+ 69e:	a6 24       	eor	r10, r6
+ 6a0:	b7 24       	eor	r11, r7
+ 6a2:	63 01       	movw	r12, r6
+ 6a4:	ca 20       	and	r12, r10
+ 6a6:	db 20       	and	r13, r11
+ 6a8:	74 01       	movw	r14, r8
+ 6aa:	ec 24       	eor	r14, r12
+ 6ac:	fd 24       	eor	r15, r13
+ 6ae:	91 01       	movw	r18, r2
+ 6b0:	2e 25       	eor	r18, r14
+ 6b2:	3f 25       	eor	r19, r15
+ 6b4:	65 01       	movw	r12, r10
+ 6b6:	ce 20       	and	r12, r14
+ 6b8:	df 20       	and	r13, r15
+ 6ba:	a2 26       	eor	r10, r18
+ 6bc:	b3 26       	eor	r11, r19
+ 6be:	c6 24       	eor	r12, r6
+ 6c0:	d7 24       	eor	r13, r7
+ 6c2:	81 01       	movw	r16, r2
+ 6c4:	0c 29       	or	r16, r12
+ 6c6:	1d 29       	or	r17, r13
+ 6c8:	25 01       	movw	r4, r10
+ 6ca:	40 26       	eor	r4, r16
+ 6cc:	51 26       	eor	r5, r17
+ 6ce:	20 94       	com	r2
+ 6d0:	30 94       	com	r3
+ 6d2:	c2 24       	eor	r12, r2
+ 6d4:	d3 24       	eor	r13, r3
+ 6d6:	42 01       	movw	r8, r4
+ 6d8:	8c 24       	eor	r8, r12
+ 6da:	9d 24       	eor	r9, r13
+ 6dc:	ca 28       	or	r12, r10
+ 6de:	db 28       	or	r13, r11
+ 6e0:	37 01       	movw	r6, r14
+ 6e2:	6c 24       	eor	r6, r12
+ 6e4:	7d 24       	eor	r7, r13
+ 6e6:	19 01       	movw	r2, r18
+
+	ADD_ROUND P0,P1,P2,P3,P4,P5,P6,P7,T0
+ 6e8:	ad 90       	ld	r10, X+
+ 6ea:	2a 24       	eor	r2, r10
+ 6ec:	ad 90       	ld	r10, X+
+ 6ee:	3a 24       	eor	r3, r10
+ 6f0:	ad 90       	ld	r10, X+
+ 6f2:	4a 24       	eor	r4, r10
+ 6f4:	ad 90       	ld	r10, X+
+ 6f6:	5a 24       	eor	r5, r10
+ 6f8:	ad 90       	ld	r10, X+
+ 6fa:	6a 24       	eor	r6, r10
+ 6fc:	ad 90       	ld	r10, X+
+ 6fe:	7a 24       	eor	r7, r10
+ 700:	ad 90       	ld	r10, X+
+ 702:	8a 24       	eor	r8, r10
+ 704:	ad 90       	ld	r10, X+
+ 706:	9a 24       	eor	r9, r10
+
+	POP R31
+ 708:	ff 91       	pop	r31
+	POP R30
+ 70a:	ef 91       	pop	r30
+
+	LDD T0, Z+0
+ 70c:	a0 80       	ld	r10, Z
+	EOR P0, T0
+ 70e:	2a 24       	eor	r2, r10
+	LDD T0, Z+1
+ 710:	a1 80       	ldd	r10, Z+1	; 0x01
+	EOR P1, T0
+ 712:	3a 24       	eor	r3, r10
+	LDD T0, Z+2
+ 714:	a2 80       	ldd	r10, Z+2	; 0x02
+	EOR P2, T0
+ 716:	4a 24       	eor	r4, r10
+	LDD T0, Z+3
+ 718:	a3 80       	ldd	r10, Z+3	; 0x03
+	EOR P3, T0
+ 71a:	5a 24       	eor	r5, r10
+
+	LDD T0, Z+4
+ 71c:	a4 80       	ldd	r10, Z+4	; 0x04
+	EOR P4, T0
+ 71e:	6a 24       	eor	r6, r10
+	LDD T0, Z+5
+ 720:	a5 80       	ldd	r10, Z+5	; 0x05
+	EOR P5, T0
+ 722:	7a 24       	eor	r7, r10
+	LDD T0, Z+6
+ 724:	a6 80       	ldd	r10, Z+6	; 0x06
+	EOR P6, T0
+ 726:	8a 24       	eor	r8, r10
+	LDD T0, Z+7
+ 728:	a7 80       	ldd	r10, Z+7	; 0x07
+	EOR P7, T0
+ 72a:	9a 24       	eor	r9, r10
+
+	STORE_MM Z
+ 72c:	20 82       	st	Z, r2
+ 72e:	31 82       	std	Z+1, r3	; 0x01
+ 730:	42 82       	std	Z+2, r4	; 0x02
+ 732:	53 82       	std	Z+3, r5	; 0x03
+ 734:	64 82       	std	Z+4, r6	; 0x04
+ 736:	75 82       	std	Z+5, r7	; 0x05
+ 738:	86 82       	std	Z+6, r8	; 0x06
+ 73a:	97 82       	std	Z+7, r9	; 0x07
+
+	POP_REGS
+ 73c:	df 91       	pop	r29
+ 73e:	cf 91       	pop	r28
+ 740:	1f 91       	pop	r17
+ 742:	0f 91       	pop	r16
+ 744:	ff 90       	pop	r15
+ 746:	ef 90       	pop	r14
+ 748:	df 90       	pop	r13
+ 74a:	cf 90       	pop	r12
+ 74c:	bf 90       	pop	r11
+ 74e:	af 90       	pop	r10
+ 750:	9f 90       	pop	r9
+ 752:	8f 90       	pop	r8
+ 754:	7f 90       	pop	r7
+ 756:	6f 90       	pop	r6
+ 758:	5f 90       	pop	r5
+ 75a:	4f 90       	pop	r4
+ 75c:	3f 90       	pop	r3
+ 75e:	2f 90       	pop	r2
+ 760:	11 24       	eor	r1, r1
+RET
+ 762:	08 95       	ret
+
+00000764 <main>:
+extern void PRESENT_gen(u8* p, u16* rk, u16* pre_compute);
+
+int main(void)
+{
+	//PRESENT_enc(p,rk);
+	PRESENT_gen(p,rk,pre_compute);
+ 764:	40 e0       	ldi	r20, 0x00	; 0
+ 766:	53 e0       	ldi	r21, 0x03	; 3
+ 768:	60 e1       	ldi	r22, 0x10	; 16
+ 76a:	71 e0       	ldi	r23, 0x01	; 1
+ 76c:	88 e0       	ldi	r24, 0x08	; 8
+ 76e:	91 e0       	ldi	r25, 0x01	; 1
+ 770:	ab dc       	rcall	.-1706   	; 0xc8 <PRESENT_gen>
+	
+	
+   PRESENT_enc_ctr(nonce,rk,p,pre_compute);
+ 772:	20 e0       	ldi	r18, 0x00	; 0
+ 774:	33 e0       	ldi	r19, 0x03	; 3
+ 776:	48 e0       	ldi	r20, 0x08	; 8
+ 778:	51 e0       	ldi	r21, 0x01	; 1
+ 77a:	60 e1       	ldi	r22, 0x10	; 16
+ 77c:	71 e0       	ldi	r23, 0x01	; 1
+ 77e:	80 e0       	ldi	r24, 0x00	; 0
+ 780:	91 e0       	ldi	r25, 0x01	; 1
+ 782:	b0 dd       	rcall	.-1184   	; 0x2e4 <PRESENT_enc_ctr>
+}
+ 784:	80 e0       	ldi	r24, 0x00	; 0
+ 786:	90 e0       	ldi	r25, 0x00	; 0
+ 788:	08 95       	ret
+
+0000078a <_exit>:
+ 78a:	f8 94       	cli
+
+0000078c <__stop_program>:
+ 78c:	ff cf       	rjmp	.-2      	; 0x78c <__stop_program>
